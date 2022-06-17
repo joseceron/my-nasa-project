@@ -9,9 +9,9 @@
     "install": "npm run install-server && npm run install-client",
     "server": "npm run watch --prefix server",
     "client": "npm start --prefix client",
-    "watch":"npm run server & npm run client",
+    "watch": "npm run server & npm run client",
     "deploy": "npm run build --prefix client && npm start --prefix server",
-    "test": "npm run test --prefix server && npm run test --prefix client"
+    "test": "npm test --prefix server && npm test --prefix client"
   },
   "repository": {
     "type": "git",
@@ -23,5 +23,8 @@
   "bugs": {
     "url": "https://github.com/joseceron/my-nasa-project/issues"
   },
-  "homepage": "https://github.com/joseceron/my-nasa-project#readme"
+  "homepage": "https://github.com/joseceron/my-nasa-project#readme",
+  "dependencies": {
+    "pm2": "^5.2.0"
+  }
 }
